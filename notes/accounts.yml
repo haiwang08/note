@@ -1,0 +1,7 @@
+Planet Scale mydb:
+    Username: 4omenyq1h2zeuy4ldm9t
+    Password: pscale_pw_eKhLnDzN55sumWssZyiq8QtrXVJOb3ihHqPmDcFIoJ0
+    cmd: mysql -h gcp.connect.psdb.cloud -D mydb -u 4omenyq1h2zeuy4ldm9t -ppscale_pw_eKhLnDzN55sumWssZyiq8QtrXVJOb3ihHqPmDcFIoJ0 --ssl-mode=VERIFY_IDENTITY --ssl-ca=/etc/ssl/cert.pem
+
+Gemini:
+    API KEY: AIzaSyB2xCXFsp5Ec2LR1TBnfq8hGS4T4y3KVco

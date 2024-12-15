@@ -1,0 +1,27 @@
+set user.name: git config --global user.name "haiwang08"
+set user.email: git config --global user.email "rainmouscar@163.com"
+
+ignore content: create a file callede .gitignore, write a "line *.ss"
+
+init folder: git init
+view status: git status
+view log history: git log
+view log history in oneline: git log --oneline
+show difference: git diff oldHead -- fileName.ss
+
+add content: git add fileName1.ss fileName2.ss
+add unique content: git add *.ss
+add all: git add .
+update local repository: git pull
+commit content: git commit -m "comment"
+push to hub: git push
+push to unique branch: git push origin branchName
+
+checkout content: git checkout oldHead -- fileName.ss
+checkout new branch: git checkout -b newBranchName
+reset all to old version: git reset --hard oldHead
+
+upload to GitHub:
+    1: git remote add origin theLink
+    2: git branch -M main
+    3: git push -u origin main

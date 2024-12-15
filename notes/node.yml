@@ -1,0 +1,5 @@
+install react: npm install react-scripts
+reacreate new node app:
+    vite: npm create vite@latest appname
+    cra∂: npx create-react-app appname
+start react(In app folder): npm start

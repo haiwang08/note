@@ -1,0 +1,32 @@
+minikube:
+    doc url: https://minikube.sigs.k8s.io/docs/start/
+    install: brew install minikube
+    start: minikube start
+    show status: minikube status
+    show all: kubectl get all  ||   node   ||   pod   ||   configmap   ||   secret   ||   svc
+    show web ip:
+        one: minikube ip
+        two: kubectl get node -o wide
+    apply config files: kubectl apply -f mongo-config.yaml
+    delete config files: kubectl delete -f mongo-config.yaml
+    show log: kubectl logs deployment.apps/myapp
+    forwarding: kubectl port-forward svc/webapp-service 8080:3000
+    visit from external: minikube service webapp-service
+    app nodePort limit range: 30000 ~ 32767
+
+linux ubantu:
+    download: curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+    install: sudo install minikube-linux-amd64 /usr/local/bin/minikube
+    install conntrack(if under root): sudo apt install conntrack
+    start: minikube start --driver=hyperv
+
+key units os K8S:
+    pod: running instances
+    service: managing ips of instances for visiting
+    node-port: visit instances with ip
+    ingress: visit instances with domain name
+    config-map: keep the configurations and make it easier to manage these configurations
+    secret: encrypt sensitive informations like username and pwd by using base64(not safe enough, need to specify another encryption algorithm like "aescbc")
+    volumes: store data or other info
+    deployment: abstract of a couple of instances, help manage instances and clusters, usually consists of sevel pods for other nodes
+    statefulset: same use as deployment, but for databases(hard to use, recommend deploy DB out of K8S)

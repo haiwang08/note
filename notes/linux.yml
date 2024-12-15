@@ -1,0 +1,35 @@
+view recent cmds: history
+use recent cmds: !3
+shows the name current process: scho $0
+show current user: whoami
+print working dir: pwd
+list:
+    list files: ls
+    list files vertically: ls -1
+    list with more info: ls -l
+    list another dir: ls /bin
+go to home dir(tilde): cd ~   ||   cd home   ||   cd root
+make new dir: mkdir test
+renmae dir/file: mv test docker   ||   mv test /etc/docker
+make new file: touch hello.txt  file2.txt  file3.txt
+remove files: rm file2.txt file3.txt   ||   rm file*
+remove dir: rm -r docker/
+concatenate files: cat file1.txt file2.txt
+show file content: cat || more || less(need installation) || head -n 5|| tail -n 5
+write a & b to c: cat file1.txt file2.txt > file3.txt
+write text to file: echo text1 > file1.txt
+write path content to file: ls -l /etc > file0.txt
+encrypt base64: echo -n texxxxt | base64
+
+hot key:
+    clear window: ctrl + l
+    exit current process: ctrl + c  ||  ctrl + d
+    remove entire word in one go: ctrl + w
+
+ubantu:
+    package manage: apt
+    online tools: apt-get
+    show all tools: apt list
+    update pkg DB: apt update
+    install pgk: apt install nano
+    uninstall pkg: apt remove nano

@@ -1,0 +1,5 @@
+show version: rustup --version, rustc --version
+
+编译: rustc -o output_filename filename.rs
+
+生成库文件: rustc --create-type lib filename.rs

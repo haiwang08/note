@@ -1,0 +1,6 @@
+replace no digit:
+    js:
+        find digits globally: /\D/g
+
+    vscode:
+        replace lower or upper case: ([A-Z])  \L$1

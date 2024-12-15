@@ -1,0 +1,29 @@
+安装 homebrew: 
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+配置文件路径:
+    intel: /usr/local/etc/nginx/nginx.conf 
+    apple silicon: /opt/homebrew/etc/nginx/nginx.conf 
+
+修改权限:
+    sudo chown -R $(rainvoid) $(brew --prefix)/_
+    sudo chown -R `whoami` /usr/local/Homebrew/
+    sudo chown -R $(whoami) $(brew --prefix)/_
+    sudo mkdir /usr/local/Frameworks
+    sudo chown -R `whoami` /usr/local/Frameworks/
+
+查看端口占用的进程号: 
+    sudo lsof -i tcp:5173
+kill进程号: 
+    kill -9 1234
+
+Github searching:
+    keyword1: in name: spring boot stars:>3000 forks:>100 langeage:java pushed:>2023-11-27
+    keyword2: in readme
+    keyword3: in description
+
+create new node app:
+    vite: npm create vite@latest appname
+    cra: npx create-react-app appname
+start react(In app folder): 
+    npm start

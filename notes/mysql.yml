@@ -1,0 +1,5 @@
+connect with terminal: mysql -h localhost -u root -p52934060pp
+
+update encryption rule: ALTER USER 'root'@'localhost' IDENTIFIED BY 'password' PASSWORD EXPIRE NEVER;
+update pwd: ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '52934060pp';
+update accessibility: FLUSH PRIVILEGES;
