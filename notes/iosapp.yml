@@ -1,0 +1,19 @@
+install capacitor: npm install @capacitor/core @capacitor/cli
+
+install Xcode cli tools and verify: xcode-select --install
+    xcode-select -p
+
+homebrew: /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+add to path:
+    (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/asptech/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+
+install cocoapods(must be done! pod --version): brew install cocoapods
+
+init app: npx cap init "reda" "com.example.app"
+
+add ios folder: npx cap add ios
+
+add files to ios folder: npx cap copy
+
+open xcode: npx cap open ios
