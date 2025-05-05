@@ -1,0 +1,4 @@
+invdia deepseek-R1:
+    key: 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
+    url: https://integrate.api.nvidia.com/v1
+    model: deepseek-ai/deepseek-r1
