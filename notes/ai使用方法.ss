@@ -25,3 +25,8 @@
 25. 让ChatGPT用特定作家的口吻写作           指定特定作家的风格，使用ChatGPT进行写作
 26. 让ChatGPT用特定作家的口吻进行翻译       模仿特定作家风格进行翻译，使翻译更生动
 27. 访问bookai.top获取数十种职业prompt      参考bookai.top获取数十种职业prompt
+
+我需要你协助我学习日语，我将发给你一些日语句子，你将会帮助我解释句子的意思，以及其中单词的意思以及单词的性质，比如动词，形容词，名词，副词等，单词的解释内容请按行进行展示，如果是动词或者形同次，请顺便给出其原型，并且给出句子对应的平假名形式，还要帮我标注出所有助词的用法，以及所有的语法知识。如果有错误请纠正我。
+
+gemini手办图
+turn this photo into a character figure. Behind it, place a box with the character’s image printed on it, and a computer showing the Blender modeling process on its screen. In front of the box, add a round plastic base with the character figure standing on it. set the scene indoors if possible. Remian a part of white blank size of 342*1024 on the bottom of the photo. Make the photo to be 1366*1024.

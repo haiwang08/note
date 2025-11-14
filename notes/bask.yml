@@ -1,0 +1,44 @@
+查看文件(包括隐藏): ls -al
+
+查看当前目录: pwd
+
+删除文件: rm xxx
+删除目录: rm -r xxx
+
+复制文件: cp a b
+移动或重命名文件: mv a b
+
+创建空文件: touch a.txt
+查看文件内容: cat a.txt
+分页查看文件: less file
+文本搜索: grep "xxx" file
+查找文件: find ./ -name "*.log"
+编辑文件: nano a.txt
+覆盖写入: echo "hi" > a
+追加写入: echo "hi" >> a
+
+查看进程: ps aux | grep 'xxx'
+实时监控: top
+杀死进程: kill 114514
+
+修改权限: chmod 755 a.sh
+赋予执行权限: chmod +x file.sh
+运行: ./backup.sh
+
+登录服务器: ssh user@AAA.BBB.CCC.DDD
+复制文件到服务器: scp a.txt user@host:/path
+获取网络内容/发送请求: curl URL
+
+安装:
+    debian/ubuntu: sudo apt update; sudo apt install xxx
+
+git: git status
+    git pull
+    git add .
+    git commit -m "msg"
+    git push
+
+docker: docker ps
+    docker images
+    docker pull image
+    docker run ...
