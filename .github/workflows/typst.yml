@@ -1,0 +1,30 @@
+name: Build Typst
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout repo
+              uses: actions/checkout@v3
+
+            - name: Install Typst
+              run: |
+                  wget https://github.com/typst/typst/releases/download/v0.11.1/typst-x86_64-unknown-linux-musl.tar.xz
+                  tar xf typst-*.tar.xz
+                  sudo mv typst /usr/local/bin/typst
+
+            - name: Compile Typst to PDF
+              run: typst compile note.typ out.pdf
+
+            - name: Deploy to GitHub Pages
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                  github_token: ${{ secrets.GITHUB_TOKEN }}
+                  publish_dir: .
+                  keep_files: true
