@@ -1,0 +1,5 @@
+INSERT INTO employees VALUES (1, 'Alice', 5000, SYSDATE);
+INSERT INTO employees VALUES (2, 'Bob', 6000, SYSDATE - 10);
+INSERT INTO employees VALUES (3, 'Charlie', 5500, SYSDATE - 100);
+
+COMMIT;
