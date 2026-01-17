@@ -7,3 +7,7 @@ show version: rustup --version, rustc --version
 new workspace: cargo new <name> && cd <name>
 
 web:
+
+安装当前程序到shell:
+    当前目录: cargo install --path .
+    github: cargo install --git https://github.com/xxx/mytool
